@@ -3,13 +3,11 @@ body{
     height: 100vh;
     font-family: 'Trebuchet MS';
     margin: 0;
-    flex-direction: row;
+    flex-direction: column;
 }
 #main{
-    height: 100%;
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 header{
     height: 10%;
@@ -26,8 +24,7 @@ header{
     border: 1px solid #444F5A;
 }
 article{
-    height: 33%;
-    width: 70%;
+    height: 40%;
     background-color: #D5C5C8;
     display: flex;
     flex-direction: column;
@@ -38,15 +35,13 @@ article{
 article > h2{
     letter-spacing: 2px;
     font-style: italic;
-    width: 90%;
-    padding: 40px;
-    font-size: 40px;
+    font-size: 30px;
     height: 5%;
+    margin-left: 40px;
 }
 article > p{
     text-indent: 40px;
     text-align: justify;
-    width: 90%;
     align-self: center;
     font-size: 20px;
     word-spacing: 8px;
@@ -57,24 +52,25 @@ section > p{
 }
 section{
     background-color: #DB7F8E;
-    width: 70%;
-    height: 15%;
+    height: 100px;
     border: 1px solid #444F5A;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-aside{
-    height: 80%;
-    width: 30%;
-    display: flex;
+aside {
     border: 1px solid #444F5A;
+    height: 107%;
+    width: 30%;
     background-color: #FFDBDA;
-}
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 footer{
     background-color: #604D53;
     height: 10%;
-    width: 70%;
     border: 1px solid #444F5A;
     display: flex;
     align-items: center;
@@ -83,7 +79,65 @@ footer{
     font-size: 30px;
     font-weight: bold;
 }
-#prawo{
-    height: 50%;
+main{
+    width: 80%;
+}
+nav {
+    background-color: #DB7F8E;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+    
+nav a {
+    padding: 40px 40px;
+    color: #FDFDFF;
+    text-decoration: none;
+    border-left: 1px solid #FDFDFF;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #444F5A;
+}
+#qbox {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #444F5A;
+    text-align: center;
+    line-height: 100px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    
+#qbox:hover {
+    background-color: #DB7F8E;
+    color: #FDFDFF;
+    }
+#wbox:hover {
+        background-color: #DB7F8E;
+        color: #FDFDFF;
+}
+#wbox {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #444F5A;
+            text-align: center;
+            line-height: 100px;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            }
+#lewo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 50%;
 }
